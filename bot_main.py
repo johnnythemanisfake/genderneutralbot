@@ -1,5 +1,6 @@
 import os
 import discord
+import asyncio
 from discord.ext import commands
 from dotenv import load_dotenv
 from bot_script import hxhx
@@ -10,6 +11,10 @@ TOKEN = os.environ['bot_token']
 client = commands.Bot(command_prefix = '?')
 
 print('started\n')
+
+async def stay_alive():
+    await asyncio.sleep(1500)
+    print('smth')
 
 @client.event
 async def on_ready():
@@ -26,4 +31,5 @@ async def on_message(message):
         await message.channel.send(new_msg)
         print('done')
 
+client.loop.create_task(stay_alive())
 client.run(TOKEN)
