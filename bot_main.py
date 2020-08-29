@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from bot_script import hxhx
 
 load_dotenv()
-TOKEN = os.environ('bot_token')
+TOKEN = os.environ['bot_token']
 
 client = commands.Bot(command_prefix = '?')
 
