@@ -1,1 +1,1 @@
-ps: scale web=1
+worker: python bot_main.py
