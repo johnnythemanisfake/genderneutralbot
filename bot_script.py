@@ -6,7 +6,10 @@ def hxhx(message):
     message = message.replace('?safe', '')
     message = message.replace('?safe ', '')
     
+    message = message.replace('woman', 'person')
     message = message.replace('man', 'person')
+    message = message.replace('son', 'child')
+    message = message.replace('daughter', 'child')
 
     message = message.replace('a', 'x')
     message = message.replace('A', 'X')
@@ -20,5 +23,6 @@ def hxhx(message):
     message = message.replace('U', 'X')
     
     message = message.replace('pxrsxn', 'person')
+    message = message.replace('chxld', 'child')
     
     return message
