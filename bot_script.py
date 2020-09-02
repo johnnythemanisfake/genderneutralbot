@@ -6,10 +6,7 @@ def hxhx(message):
     message = message.replace('?safe', '')
     message = message.replace('?safe ', '')
     
-    message = message.replace('dinuguan', 'bawal \'yan kapatid')
-    message = message.replace('pre-marital sex', 'deliks brad')
-    message = message.replace('pre marital sex', 'deliks brad')
-    message = message.replace('premarital sex', 'deliks brad')
+    message = message.replace('man', 'person')
 
     message = message.replace('a', 'x')
     message = message.replace('A', 'X')
@@ -21,5 +18,7 @@ def hxhx(message):
     message = message.replace('O', 'X')
     message = message.replace('u', 'x')
     message = message.replace('U', 'X')
+    
+    message = message.replace('pxrsxn', 'person')
     
     return message
