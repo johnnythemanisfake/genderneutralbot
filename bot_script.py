@@ -22,7 +22,7 @@ def hxhx(message):
     message = message.replace('u', 'x')
     message = message.replace('U', 'X')
     
-    message = message.replace('pxrsxn', 'person')
+    message = message.replace('pxrchxld', 'perchild')
     message = message.replace('chxld', 'child')
     
     return message
